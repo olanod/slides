@@ -1,10 +1,9 @@
+
 # Virto Connect
 
 ## Seamless Web3 Authentication for Substrate chains
 
 *a.k.a. transactions with PassKeys ... **and beyond!***
-
-![Virto Logo:width:60%](img/virto_logo.png)
 
 <!-- end_slide -->
 
@@ -95,7 +94,7 @@ Under the Hood
 
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   Client Side   │───▶│   Virto OS       │───▶│   Substrate     │
+│   Client Side   │───>│   Virto OS       │───>│   Substrate     │
 │                 │    │                  │    │   Blockchain    │
 │ Web Component   │    │  Decentralizable │    │                 │
 │ JS SDK          │    │  APIs            │    │ Pallet Pass     │
@@ -196,16 +195,14 @@ What's Next?
 ============
 
 **Immediate Roadmap:**
+- Finish security audit
 - Oauth authenticator (google, github, etc.)
-- Blockchain Wallet authenticators
-  * Substrate
-  * Ethereum
-  * Bitcoin
-  * Solana
-- ZK
+- Blockchain Wallet authenticators (Substrate, Ethereum, Bitcoin, Solana)
+- ZK authenticators
   * Private passkey assertion
   * Private proof of oauth account ownership
   * Proof of DAO membership for anonymous DAO transactions
+- Kusama AH deployment
 - Developer tooling improvements
 
 **Vision:**
