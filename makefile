@@ -1,7 +1,7 @@
 .PHONY: clean build publish
 
 SLIDES := virto-connect private-gov
-OUT_DIR := .dist
+OUT_DIR := docs
 
 build: clean $(SLIDES:%=$(OUT_DIR)/%.html)
 

@@ -80,6 +80,8 @@ OpenGov Quick Overview
 
 ## Understanding the foundation
 
+<!-- column_layout: [5, 1, 5] -->
+<!-- column: 0 -->
 ```mermaid +render
 flowchart TD
     B[Tracks & Origins] --> A[Pallet Referenda]
@@ -92,6 +94,7 @@ flowchart TD
     style G fill:#9999ff
 ```
 
+<!-- column: 2 -->
 **Key components:**
 - **Referenda**: Manages polls and lifecycle
 - **Tracks**: Different governance paths
