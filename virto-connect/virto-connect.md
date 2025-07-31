@@ -195,14 +195,14 @@ What's Next?
 ============
 
 **Immediate Roadmap:**
-- Finish security audit
-- Oauth authenticator (google, github, etc.)
-- Blockchain Wallet authenticators (Substrate, Ethereum, Bitcoin, Solana)
+- F̶i̶n̶i̶s̶h̶ ̶s̶e̶c̶u̶r̶i̶t̶y̶ ̶a̶u̶d̶i̶t̶✅
+- Oauth authenticator (google, github, etc.)🚧
+- Blockchain Wallet authenticators (S̶u̶b̶s̶t̶r̶a̶t̶e̶✅, Ethereum, Bitcoin, Solana)
 - ZK authenticators
   * Private passkey assertion
   * Private proof of oauth account ownership
   * Proof of DAO membership for anonymous DAO transactions
-- Kusama AH deployment
+- Kusama AH deployment 🙏
 - Developer tooling improvements
 
 **Vision:**
