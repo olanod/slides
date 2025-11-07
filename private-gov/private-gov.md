@@ -83,15 +83,21 @@ OpenGov Quick Overview
 <!-- column_layout: [5, 1, 5] -->
 <!-- column: 0 -->
 ```mermaid +render
-flowchart TD
-    B[Tracks & Origins] --> A[Pallet Referenda]
-    C(Votes) --> A
-    E[Conviction Voting] --> C
-    F[Collective] --> C
-    G[Communities] --> C
-    
-    style A fill:#071914
-    style G fill:#9999ff
+block-beta
+    columns 3
+    V("Conviction Voting")
+    space
+    C("Communities")
+    space:6
+    T["Tracks&Origins"]
+    space
+    R["Referenda"]
+
+    V-- "token voting" -->R
+    C-- "anything voting" -->R
+    T-->R
+
+    style C fill:#596
 ```
 
 <!-- column: 2 -->

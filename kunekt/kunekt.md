@@ -12,11 +12,12 @@ theme:
 
 ---
 
-# Kusama JAM and Kunekt's Private Apps
+Kusama JAM and Kunekt's Private Apps
+====================================
 
-Let's explore the path towards **unstoppable private real-time JAM applications**
+### The path towards **unstoppable, private, real-time JAM powered applications**
 
-<!-- column_layout: [4, 1, 3] -->
+<!-- column_layout: [1, 1] -->
 <!-- column: 0 -->
 1. **The background** - Virto
 2. **The opportunity** - Kusama JAM
@@ -25,7 +26,7 @@ Let's explore the path towards **unstoppable private real-time JAM applications*
 5. **The framework** - Writ
 6. **The strategy** - Progressive decentralization
 
-<!-- column: 2 -->
+<!-- column: 1 -->
 ![Kosmo](img/kosmo_ok.png)
 
 <!-- end_slide -->
@@ -80,19 +81,20 @@ Decentralized, Private, Kreative,
 # **Fast**, Light and Independent
 
 In **Ref#573** KSM holders voted for
-- 1sec block production
+- **1sec** block production
 - 32 cores
-
-*... So many possibilities! 🤤*
 
 <!-- column: 2 -->
 
 ![Kosmo](img/kosmo_think.png)
 
+<!-- pause -->
+*... So many possibilities! 🤤*
+
 <!-- end_slide -->
 
 The protocol: **Kunekt**
-======
+=======================
 
 ## Private real-time collaboration on JAM
 
@@ -126,8 +128,8 @@ columns 2
 Kunekt Overview
 ===============
 
-- Smart documents(CRDT) updated P2P
-- Peers sync with JAM encrypted history
+- Smart documents(CRDTs) updated via P2P
+- Local peers sync encrypted history with JAM peer
 
 <!-- column_layout: [1, 1] -->
 <!-- column: 0 -->
@@ -178,59 +180,98 @@ flowchart TD
 The Engine: VOS
 ===============
 
+<!-- column_layout: [1, 3, 1] -->
+<!-- column: 1 -->
 # Virtual(Virto) Operating System
+<!-- reset_layout -->
 
 <!-- column_layout: [1, 1] -->
 <!-- column: 0 -->
 
 - ⚙️ Embedded async runtime (Embassy)
   - Cooperative multitasking
-- 🖥️ WASM+WASI
+- 🖥️ WASM + WASI
   - AOT RISC-V compilation
   - Capability based VM
 - 📜 Shell Scripting
 
 <!-- column: 1 -->
 
-- 🚀 Runs Everywhere
-  - **JAM**
-  - Web
-  - Bare metal
-  - Linux
 - 🤖Common Abstractions
   - Filesystem
   - Database
   - IPC
+- 🚀 Runs Everywhere
+  - Linux
+  - Web
+  - Bare metal
+  - **JAM**
 
 <!-- end_slide -->
 
-VOS - A universal backend
-====
+Really runs Everywhere
+=======================
 
-### For JAM Services
-### For Mobile/Web 
-### For Web Backends
+<!-- column_layout: [1, 1] -->
+<!-- column: 0 -->
+## On Regular Backends
+- A fast modular Web2 backend
+- Hundreds of OS instances for each user or DAO
+
+<!-- column: 1 -->
+## On Mobile/Web 
+- A local API for front-ends
+- Simulate a remote backend
+
+<!-- new_line -->
+<!-- reset_layout -->
+<!-- column_layout: [1, 5, 1] -->
+<!-- column: 1 -->
+## **On JAM**
+- A PVM native service
+- Multiple long running tasks on a single core
+
+<!-- reset_layout -->
+<!-- pause -->
+
+*... And they can all talk to each other and share code*!
 
 <!-- end_slide -->
+
+Progressive Decentralization
+============================
+
+<!-- column_layout: [1, 2, 1] -->
+<!-- column: 1 -->
+a.k.a. *Let's be sneaky*
+<!-- reset_layout -->
+
+<!-- column_layout: [1, 1] -->
+<!-- column: 0 -->
+### With Developers
+Let's give them a tool they can use today on their current projects.
+> ⚠️ Many(Most?) developers *hate* Blockchain
+
+<!-- column: 1 -->
+### With Organizations
+Let's provide usefup APIs with well known technology, easy to integrate in existing infra.
+
+> ⚠️ Why hire specialized talent(e.g. Solidity devs)
+
+<!-- reset_layout -->
+<!-- pause -->
+<!-- new_line -->
+*... later we'll bring them to the ~dark~ decentralized side 😈*
+ 
+<!-- end_slide -->
+
 
 Writ
 ====
 
-# WASI Real-Time Interoperable Tasks
-<!-- column_layout: [2, 3] -->
+<!-- column_layout: [5, 2] -->
 <!-- column: 0 -->
 
-- Familiar (ink! inspired)
-- WASM + WASI
-- Great DevX
-  - Fast compilation
-  - Existing tooling
-- Runs everywhere
-- RISC-V and PVM friendly(WIP)
-- Storage/transport agnostic
-- Async
-
-<!-- column: 1 -->
 ```rust
 #[writ::task]
 pub mod flipper {
@@ -250,31 +291,35 @@ pub mod flipper {
   }
 }
 ```
-<!-- end_slide -->
-
-Progressive Decentralization
-============================
-
-## a.k.a. **Let's be sneaky**
-
-<!-- column_layout: [1, 1] -->
-<!-- column: 0 -->
-### For Developers
-Let's give them a tool they can use today on their current projects.
-> ⚠️ Many(Most?) developers *hate* Blockchain
 
 <!-- column: 1 -->
-### For Organizations
-Let's provide familiar APIs easy to integrate in existing infra.
+Wait ... isn't that **ink!**?
 
-> Why hire specialized talent(e.g. Solidity devs)
+![Think](img/kosmo_think.png)
 
-<!-- reset_layout -->
-
-*... And tomorrow we'll show them how easy it is to join the dark side 😈*
- 
 <!-- end_slide -->
 
+WASI Real-Time Interoperable Tasks
+===
+
+<!-- new_lines: 2 -->
+<!-- column_layout: [2, 1] -->
+<!-- column: 0 -->
+- Familiar (ink! inspired)
+- Long running **async**
+- Great DevX
+  - Simple
+  - Fast compilation
+  - Existing tooling
+- Storage/transport agnostic
+- RISC-V and PVM friendly(WIP)
+
+<!-- column: 1 -->
+![Yes](img/kosmo_ok.png)
+
+<!-- end_slide -->
+
+<!-- jump_to_middle -->
 Demo time!
 ==========
 
